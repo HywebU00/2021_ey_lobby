@@ -1,0 +1,736 @@
+// 變數
+$m-gutter: 4px;
+
+.R{ color: #bf0000; }
+.B{ color: #0541b1; }
+
+// 
+.header{
+    background: url(../images/mp-bg-land.jpg) 50% 94px no-repeat,
+                url(../images/key-visual.png) right 16% top 10px no-repeat;
+    background-size: cover,  35% auto;
+
+    .container{
+        // background: url(../images/key-visual.png) right 20px no-repeat;
+        // background-size: 45% auto;
+    }
+
+    h1{ padding: 6px .5em; }
+
+    // 導覽列
+    .navigation {
+        padding: 0 1em;
+        margin: .5em 0;
+        a{
+            padding: .25em 0;
+            display: inline-block
+        }
+        p{
+            margin: 0;
+            font-size: .876em;
+            span{
+                display: inline-block;
+                margin-right: 10px;
+                button{ margin-left: 8px;}
+            }
+        }
+    }
+
+    @include screen('mobile') {
+        background: #fff;
+        box-shadow: 0px 2px 5px RGBA(0, 0, 0, 0.3);
+        .container{}
+
+        .navigation { display: none;}
+    }
+}
+
+// 兩組東西、內容乎多乎少時、的對齊啦 -----------------
+.flex-mix{
+    @extend %flex_set;
+    align-items: center;
+}
+.function_mix{
+    @extend %flex_set;
+    flex-flow: row nowrap;
+    align-items: center;
+    // margin-bottom: .65em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+
+    >input, .status{
+      // flex: 1 1 50%;
+      flex: 1 1 auto;
+      max-width: 50%;
+    }
+    >input{}
+
+    // 狀態
+    .status{
+        @extend %flex_set;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        p{
+            margin: 0;
+            padding: 0 .5em;
+            span{
+                display: inline-block;
+                padding: 0 .25em;
+                color: $lightColor;
+                font-size: bold;
+            }
+        }
+        button{
+            // max-width: 120px;
+        }
+    }
+
+    @include screen('tablet'){
+        flex-flow: row wrap;
+        input{ flex:1 1 100%; }
+    }
+
+    // padding-left
+
+    // 搜尋 + 其他組合
+    &.type2{
+        @extend %flex_set;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        div{
+            // input + select + date
+            &:first-child{
+
+                @extend %flex_set;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                // align-items: flex-start;
+
+                label{ font-weight: 500; }
+                input, select, textarea, .input-i {
+                    width: auto;
+                }
+                .form_grp{
+                    flex: 1 1 auto;
+                    width: auto;
+                    padding: 0 0;
+                    border-bottom: 0;
+
+                    .form_title{
+                        max-width: 100%;
+                        flex: 0 0 auto;
+                        padding-right: 0;
+                        margin-left: 1em;
+                        margin-right: 0;
+                    }
+
+                    .form_content{
+                        max-width: 100%;
+                        flex-basis: auto;
+                        padding-left: 0;
+                    }
+                }
+
+                @include screen('tablet'){
+                    flex-flow: row wrap;
+                }
+
+            }
+        }
+
+        // 狀態
+        .status{ flex: 1 1 auto; }
+    }
+
+    // 表單
+    .form{
+      input, select, textarea, .input-i{ width: auto; }
+      label{ font-weight: bold; }
+    }
+
+    .btn_grp{ padding: 0; }
+
+    // 全員靠左邊
+    &.left{
+      justify-content: flex-start;
+    }
+}
+
+// table 相關 -------------------------------------
+table{
+
+    thead + tbody td{
+        text-align: center;
+        padding: 4px;
+    }
+    thead th{
+        padding: .5em 4px;
+        border: solid 1px transparent;
+        border-top: solid 3px $secondaryColor;
+        border-bottom: solid 1px $secondaryColor;
+        text-align: center;
+        // width: auto;
+        // min-width: 60px;
+        color: $secondaryColor;
+    }
+    th{}
+    td{
+        border: solid 1px transparent;
+        border-top: solid 1px #DDD;
+        border-bottom: solid 1px #DDD;
+        padding: 4px 8px;
+        word-break: initial;
+    }
+    tr:last-child{
+        td{ border-bottom: transparent; }
+    }
+    .btn_grp{
+        padding: 0 0;
+        .btn { padding: .25em .5em;}
+    }
+}
+.border-grp{
+    padding: 1.5em 1em;
+    border: solid 1px #ddd;
+    margin-top: 10px;
+    margin-bottom: .75em;
+    position: relative;
+    border-radius: 6px;
+
+    h3{ color: $secondaryColor; }
+
+    .btn_grp{ padding: .5em 0;}
+
+    .notice{
+        &:before{ display: none; }
+        padding: .75em 1em;
+        color: #333;
+        background: #f2f2f2;
+        margin: 0;
+        p, ol, ul{ margin: 8px 0;}
+        .warn{ color: $importantColor; }
+
+        +.table_wrapper{ margin-top: 1em;}
+    }
+
+    .table_wrapper + .notice{ margin-top: 1em;}
+}
+.form-card{
+    padding: 0 1em;
+
+    ol, ul{
+        margin-top: .25em;
+    }
+
+    h3{
+        margin-top: 0;
+        padding: .65em 0;
+        border-bottom: 3px solid $secondaryColor;
+    }
+
+    .flex-form .form_title{
+        padding-left: 0;
+        text-align: right;
+    }
+
+    .tooltip span{
+        color: $primaryColor;
+        border-bottom: dotted 2px $primaryColor;
+        display: inline-block;
+        padding: 2px 4px;
+        &:hover, &:focus{
+            color: #fff;
+            background: $primaryColor;
+            border-bottom: transparent;
+        }
+    }
+
+    .box{
+        border: solid 1px #dbdbdb;
+        padding: 1em;
+        margin: 8px 0;
+
+        h4{
+            margin: 4px 0;
+            color: $secondaryColor;
+            padding-left: .75em;
+            border-left: 4px solid $secondaryColor;
+        }
+    }
+
+    // 審核意見回覆
+    &.audit-reply{
+        h3{
+            color: $lightColor;
+            border-bottom: 3px solid $lightColor;
+        }
+    }
+
+    // accordion
+    .accordion{
+        ul{
+            padding-left: 0;
+        }
+
+        &.name-list{
+            counter-reset: aaa;
+
+            ul{
+                >li >a{
+                    padding: .5em 1.5em;
+                    background: #04497e;
+                    border-radius: 4px;
+
+                    &:before{
+                        counter-increment: aaa;
+                        content: "遊說代表" counter(aaa) "：";
+                    }
+                }
+            }
+
+            .accordion-content{
+                background: #f0f0f0;
+            }
+        }
+    }
+
+    @include screen('tablet') {
+        .flex-form .form_title{ text-align: left; }
+    }
+
+    @include screen('mobile') {
+        padding: 0 0;
+    }
+}
+.td-list{ display: block; }
+
+a.file_pdf{
+    font-size: 0;
+    display: block;
+    width: auto;
+    height: 30px;
+    background: url(../images/basic/icon_pdf.png) 50% 50% no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+// 
+.tooltip{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+}
+
+// 模組相關 ---------------------------------------
+// 產銷貼紙
+.sticker-info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    // align-items: center;
+    width: 100%;
+    padding: 1em 1.5em 1em 3em;
+    border: solid 1px #55cbac;
+    border-radius: 4px;
+    // p{
+    //     b{ color: #b70000; }
+    // }
+    // img.QR{}
+
+    .col{
+        b{ color: #b70000; }
+        &:first-child{
+            flex: 0 0 200px;
+            text-align: center;
+            p{ text-align: left; }
+            .img-container{
+                margin-top: 12px;
+                max-height: 120px;
+                background: none;
+            }
+            // img{
+            //     width: auto;
+            //     max-height: 120px;
+            // }
+        }
+        &:last-child{
+            flex: 1 1 auto;
+            padding-left: .5em;
+
+            padding-left: 1.5em;
+        }
+    }
+
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: calc(100% - 2em);
+        background: #55cbac;
+        left: 0;
+    }
+}
+// 表單控制按鈕
+.btn_panel {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9998;
+    // width: 100%;
+    width: 100%;
+    background: rgba(74,74,74,.75);
+
+    @include screen('tablet') {}
+    @include screen('mobile') {}
+}
+.has-btn_panel + footer{ margin-bottom: 4em; }
+// 表單步驟
+.step{
+    text-align: right;
+    position: absolute;
+    right: 1em;
+    top: -20px;
+
+    +p, +div{
+        margin-top: 2em;
+    }
+    a{
+        display: inline-block;
+        padding: .75em 1.5em .5em;
+        font-size: 112.5%;
+        color: #222;
+        background: #ededed;
+        // background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 100%);
+
+        transition: all .3s ease;
+
+        span{
+            display: block;
+            font-size: .813em;
+        }
+        &.act{
+            background: $primaryColor;
+            // box-shadow: inset 0 4px 0 darken($primaryColor, 10);
+            // border-top: 4px solid darken($primaryColor, 10);
+            color: #fff;
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px -25px 50px -12px, inset 0 4px 0 $color-orange;
+            box-shadow: inset 0 4px 0 #ffbf00;
+        }
+
+        &:hover, &:focus{
+            background: $color-orange;
+            color: #fff;
+            box-shadow: inset 0 4px 0 #ffbf00;
+        }
+    }
+
+    @include screen('mobile') {
+        text-align: left;
+        position: static;
+        display: flex;
+        flex-flow: row wrap;
+        a{
+            flex: 1 1 auto;
+            padding: .5em .75em;
+        }
+    }
+}
+// 審核意見
+.audit-info{
+    background: $lightColor;
+    color: #fff;
+    padding: 1.25em 2em;
+    h3{
+        margin: 0 0 10px;
+        color: #fff;
+        // border-left: 4px solid #fff;
+        font-size: 125%;
+
+        span{
+            &:before, &:after{
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                vertical-align: middle;
+            }
+            &:before{ margin-right: 10px; }
+            &:after{ margin-left: 10px; }
+        }
+    }
+    p{
+        margin: 8px 0 0;
+    }
+}
+// 篩選
+.info-filter{
+    background: #f5f5f5;
+    padding: 1.5em 1em 1em;
+    border-top: solid 3px #ccc;
+
+    select, input{ margin: .3em 0;}
+    @extend %flex_set;
+    .col{
+        // @include flex-xs-equal(1, 0px);
+        // @include flex-sm-equal(2, $m-gutter);
+        // @include flex-md-equal(4, $m-gutter);
+        // @include flex-lg-equal(4, $m-gutter);
+        flex: 1 1 auto;
+        @include gutter(.5em);
+    }
+
+    .btn_grp{
+        width: 100%;
+        padding: 0;
+    }
+
+    @include screen('mobile') {
+        .col{
+            min-width: 50%;
+        }
+    }
+}
+
+
+// 首頁 ------------------------------------------
+.mp{
+    .main{
+        padding: 0;
+        background: url(../images/mp-bg-slash.jpg) right top no-repeat;
+    }
+}
+.mp-main-link{
+    .container{
+        position: relative;
+        padding-top: 3em;
+        .left-top{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $primaryColor;
+            color: #fff;
+            padding: .45em 1.75em;
+            font-size: 90%;
+            a{ color: #fff; }
+        }
+
+        @extend %flex_set;
+        justify-content: center;
+        align-items: center;
+        h1{}
+        button{
+            margin-left: 1.75em;
+        }
+    }
+}
+// 
+.mp-other-link{
+    padding-top: 15em;
+    background: url(../images/key-visual.png) 50% top no-repeat, 
+                    url(../images/mp-bg-land.jpg) 50% 160px no-repeat;
+    .container{
+        padding: 2em 1em;
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        @extend %flex_set;
+        .col{
+            @include flex-xs-equal(2, 0px);
+            @include flex-sm-equal(3, 0px);
+            @include flex-md-equal(5, 0px);
+            @include flex-lg-equal(5, 0px);
+            @include gutter();
+
+            text-align: center;
+            cursor: pointer;
+
+            a{
+                display: block;
+                padding-top: 130px;
+                position: relative;
+                color: #222;
+                font-size: 110%;
+                font-weight: bold;;
+
+                >i{
+                    display: block;
+                    height: 124px;
+                    position: absolute;
+                    left: calc(50% - 62px);
+                    top: 0;
+
+                    &.icon-1, &.icon-2, &.icon-3, &.icon-4, &.icon-5{
+                        &:before{
+                            content: '';
+                            background: url(../images/mp-main-link-bg-circle.png) 50% 50% no-repeat;
+                            display: block;
+                            width: 124px;
+                            height: 124px;
+                            margin: auto;
+
+                            background-size: 124px 124px;
+                            transform: rotate(0deg);
+                            transition: all .6s ease;
+                        }
+                        &:after{
+                            content: '';
+                            display: block;
+                            border-radius: 50%;
+                            width: 124px;
+                            height: 124px;
+                            margin: -124px auto;
+                            transform: scale(0);
+                            transform-origin: 50% 50%;
+
+                            transition: all .6s ease;
+                        }
+                    }
+
+                    &.icon-1{
+                        background: url(../images/mp-other-link-icon-1.svg) 50% 50% no-repeat; background-size: 72px 72px;
+                        &:after{
+                            background: url(../images/mp-other-link-icon-1-white.svg) 50% 50% no-repeat, rgb(47,179,131);
+                            background: url(../images/mp-other-link-icon-1-white.svg) 50% 50% no-repeat,
+                                        linear-gradient(90deg, rgba(47,179,131,1) 0%, rgba(24,168,107,1) 100%);
+                            background-size: 72px 72px, 124px 124px;
+                        }
+                    }
+                    &.icon-2{
+                        background: url(../images/mp-other-link-icon-2.svg) 50% 50% no-repeat; background-size: 72px 72px;
+                        &:after{
+                            background: url(../images/mp-other-link-icon-2-white.svg) 50% 50% no-repeat, rgb(47,179,131);
+                            background: url(../images/mp-other-link-icon-2-white.svg) 50% 50% no-repeat,
+                                        linear-gradient(90deg, rgba(47,179,131,1) 0%, rgba(24,168,107,1) 100%);
+                            background-size: 72px 72px, 124px 124px;
+                        }
+                    }
+                    &.icon-3{
+                        background: url(../images/mp-other-link-icon-3.svg) 50% 50% no-repeat; background-size: 72px 72px;
+                        &:after{
+                            background: url(../images/mp-other-link-icon-3-white.svg) 50% 50% no-repeat, rgb(47,179,131);
+                            background: url(../images/mp-other-link-icon-3-white.svg) 50% 50% no-repeat,
+                                        linear-gradient(90deg, rgba(47,179,131,1) 0%, rgba(24,168,107,1) 100%);
+                            background-size: 72px 72px, 124px 124px;
+                        }
+                    }
+                    &.icon-4{
+                        background: url(../images/mp-other-link-icon-4.svg) 50% 50% no-repeat; background-size: 72px 72px;
+                        &:after{
+                            background: url(../images/mp-other-link-icon-4-white.svg) 50% 50% no-repeat, rgb(47,179,131);
+                            background: url(../images/mp-other-link-icon-4-white.svg) 50% 50% no-repeat,
+                                        linear-gradient(90deg, rgba(47,179,131,1) 0%, rgba(24,168,107,1) 100%);
+                            background-size: 72px 72px, 124px 124px;
+                        }
+                    }
+                    &.icon-5{
+                        background: url(../images/mp-other-link-icon-5.svg) 50% 50% no-repeat; background-size: 72px 72px;
+                        &:after{
+                            background: url(../images/mp-other-link-icon-5-white.svg) 50% 50% no-repeat, rgb(47,179,131);
+                            background: url(../images/mp-other-link-icon-5-white.svg) 50% 50% no-repeat,
+                                        linear-gradient(90deg, rgba(47,179,131,1) 0%, rgba(24,168,107,1) 100%);
+                            background-size: 72px 72px, 124px 124px;
+                        }
+                    }
+                }
+
+                &:hover, &:focus{
+                    color: $lightColor;
+                    >i{
+                        &.icon-1, &.icon-2, &.icon-3, &.icon-4, &.icon-5{
+                            &:before{
+                                transform: rotate(180deg);
+                            }
+                            &:after{
+                                transform: scale(1);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover, &:focus{
+                a{
+                    &:before{}
+                    &:after{}
+                }
+            }
+        }
+    }
+}
+
+// 內頁 -------------------------------------------
+.innerpage{
+    @include screen('mobile') {
+        padding-top: 60px;
+    }
+}
+
+footer {
+    box-sizing: border-box;
+    @include clearfix;
+    text-align: left;
+    font-size: 0.813em;
+    padding: 1em 0;
+    .container {
+        @include gutter;
+        display: flex;
+        @include screen('tablet') {
+            flex-wrap:wrap;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+        &:hover,
+        &:focus { color: darken($primaryColor, 10); }
+    }
+    .footer_info {
+        flex:1 1 auto;
+        p{
+            margin: 5px 0;
+            &:first-child{
+                padding-bottom: 5px;
+                border-bottom: 1px solid #666;
+            }
+        }
+    }
+    .footer_icon {
+        flex:0 1 200px;
+        align-self: center;
+        text-align: right;
+
+        a {
+            display: inline-block;
+            vertical-align: top;
+            position:relative;
+            &:focus {
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    box-shadow: 0px 0px 0px 1px $aHover inset;
+                    z-index: 99;
+                }
+            }
+        }
+        img { max-width: 16
+
+            0px; }
+
+        @include screen('tablet') {
+           flex:1 1 100%; 
+           text-align: right;
+        }
+    }
+}

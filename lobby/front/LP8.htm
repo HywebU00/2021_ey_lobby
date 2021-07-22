@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說登記系統前台</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!--popup start-->
+    <div id="modal" class="modal">
+        <h2>燈箱主標題</h2>
+        <div class="table_operating">
+            <!-- 1 申請案件撤銷理由說明 -->
+            <h3>項目1：遊說登記申請 - 新增</h3>
+            <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+            <form action="">
+                <div class="flex-form form_grid">
+                    <div class="form_grp">
+                        <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者類型</label>
+                        <div class="form_content">
+                            <select id="selectSample" name="">
+                                <option value="">請選擇</option>
+                                <option value="">項目一</option>
+                                <option value="">項目二</option>
+                                <option value="">項目三</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_grp">
+                        <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者身分</label>
+                        <div class="form_content">
+                            <select id="selectSample" name="">
+                                <option value="">請選擇</option>
+                                <option value="">項目一</option>
+                                <option value="">項目二</option>
+                                <option value="">項目三</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_grp">
+                        <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>統一編號</label>
+                        <div class="form_content">
+                            <input name="text" type="text" value="" placeholder="12345678" readonly="">
+                        </div>
+                    </div>
+                    <div class="form_grp">
+                        <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>委託人身分</label>
+                        <div class="form_content">
+                            <select id="selectSample" name="">
+                                <option value="">請選擇</option>
+                                <option value="">項目一</option>
+                                <option value="">項目二</option>
+                                <option value="">項目三</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 提醒 -->
+                    <div class="notice_warning">注意 : 請申請人留意並確實做好上述選擇，系統依據所選條件帶出對應之線上申請書供遊說登記申請送件使用。若選擇有誤，請重新操作。</div>
+
+                    <div class="btn_grp form_inline">
+                        <button class="btn btn-reset">取消</button>
+                        <button class="btn btn-submit">確定</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- 2 案件自行撤銷-撤銷理由填寫-->
+            <h3>項目2：申請案件撤銷理由說明 </h3>
+            <form action="">
+                <div class="flex-form form_grid">
+                    <div class="form_grp">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="placeholder文字"></textarea>
+                    </div>
+                    <!-- 提醒 -->
+                    <div class="notice_warning">說明 : 輸入說明內容字數限制200中、英文字</div>
+
+                    <div class="btn_grp form_inline">
+                        <button class="btn btn-reset">取消</button>
+                        <button class="btn btn-submit">確定</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--popup end-->
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="index.htm"><img src="images/logo.png" alt="遊說登記系統" /></a></h1>
+                <nav class="navigation">
+                    <p>
+                        <span>使用者：張三豐 (自然人憑證登入)<button class="btn btn-logout">登出</button></span>
+                        <span>登入時間：2018/09/26</span>
+                        <span>登出倒數：19分20秒</span>
+                    </p> 
+                </nav>
+                <!-- menu Start -->
+                <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">優先處理事項</a></li>
+                        <li><a href="#">遊說登記申請</a></li>
+                        <li><a href="#">案件進度查詢</a>
+                            <ul>
+                                <li><a href="#">案件進度查詢</a></li>
+                                <li><a href="#">補正(件)列表</a></li>
+                                <li><a href="#">案件撤銷</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">遊說變更登記申請</a></li>
+                        <li><a href="#">遊說財務收支申報(年度)</a></li>
+                        <li><a href="#">遊說終止登記申請</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <div class="container">
+                <!-- 主要內容區 -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-mix">
+                        <!-- h2節點 -->
+                        <h2 class="title">遊說登記申請 - 新增</h2>
+                        <!-- function功能區塊 -->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="#">回上一頁</a></li>
+                                <!-- <li class="icon_print"><a href="#">友善列印</a></li>
+                                <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- table Start -->
+                    <!-- 1 -->
+                    <section class="">
+                        <div class="border-grp">
+                            <!-- step -->
+                            <div class="step">
+                                <a href="#"><span>step 1</span>申請人基本資料</a>
+                                <a href="#" class="act"><span>step 2</span>遊說代表資料</a>
+                            </div>
+                            <div class="flex-mix">
+                                <!-- <h3>次項標題</h3> -->
+                                <div class="btn_grp">
+                                    <button class="btn more" id="openModal">新增遊說代表<i class="i_add2"></i></button>
+                                </div>
+                            </div>
+                            <div class="table_wrapper">
+                                <table summary="">
+                                    <thead>
+                                        <tr>
+                                          <th>序號</th>
+                                          <th>遊說代表姓名</th>
+                                          <th>出生日期</th>
+                                          <th>身分證字號</th>
+                                          <th>資料完整度</th>
+                                          <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>張三豐</td>
+                                            <td>1997/05/20</td>
+                                            <td>A123456789</td>
+                                            <td><b class="R">已完成</b></td>
+                                            <td>
+                                                <div class="btn_grp">
+                                                    <button type="button" class="btn operate">編輯</button>
+                                                    <button type="button" class="btn operate">刪除</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_panel btn_grp">
+                                <button class="btn btn operate">回上頁</button>
+                                <button class="btn btn-submit">送出</button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- table End -->
+                </div> 
+            </div>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright">內政部民政司 版權所有©  |  網站安全政策 隱私權保護政策</p>
+                    <p>地址 : 10055臺北市中正區徐州路5號     內政服務熱線 : 1996</p>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

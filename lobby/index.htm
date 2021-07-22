@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說登記系統前後台</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="front/css/hyui.css">
+    <!-- favicon -->
+    <link href="front/images/favicon.png" rel="icon" type="image/x-icon">
+    <style>
+        .demo_wrap {
+            max-width: 1000px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+            background: #FFF
+        }
+        .demo_wrap h1 {
+            display: inline-block;
+            margin: 0px auto;
+            max-width: 300px;
+            /*float: left;*/
+            margin-right: 1em 
+        }
+        b{
+            background: deeppink;
+            color: #fff;
+            padding: .25em .5em;
+        }
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+
+        .demo_wrap h1 img { width: auto; }
+        .num { width: 12% }
+
+        body { counter-reset: num }
+        table {
+            margin-bottom: 1em;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td{
+            padding: .5em;
+            text-align: left;
+        }
+
+        table td{
+            border: #ddd 1px solid; 
+            word-break: break-all; 
+            text-align: left !important;
+            padding: .5em 1em !important;
+        }
+        table td a{ word-break: break-all; }
+        table th{
+            background-color: #F3F3F3;
+            color: #333;
+            border: #DDD 1px solid;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+
+        table tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") ;
+        }
+        tbody tr td:nth-child(2) { width: 25% }
+        tbody tr td span{ color: deeppink; }
+        tbody tr td b{
+            background: none;
+            color: deeppink;
+            padding: 0;
+        }
+        tbody tr td b.back{ background: #2da53b; }
+        .btn_grp{ text-align: right; }
+
+        @media screen and (max-width:545px) {
+           .btn_grp{ text-align: center; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="demo_wrap">
+        <h1><img src="front/images/logo.png" alt=""></h1>
+        <!-- <div class="btn_grp">
+            <a href="#" class="btn">切版檔案請按此下載</a>
+        </div> -->
+        <div class="table_wrapper">
+            <!--  -->
+            <h3>前台</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>表單</td>
+                        <td><a href="front/form.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>首頁</td>
+                        <td><a href="front/mp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>優先處理事項</td>
+                        <td><a href="front/LP1.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>MORE列表頁</td>
+                        <td><a href="front/LP2.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>遊說登記申請</td>
+                        <td>
+                            <ol>
+                                <li>暫存資料列表 &nbsp;<a href="front/LP3.htm" target="_blank"></a></li>
+                                <li>編輯暫存資料 &nbsp;<a href="front/LP4.htm" target="_blank"></a></li>
+                                <li>(我要申請-受委託進行遊說者_營利法人) &nbsp;<b>詳見LP3燈箱（我要登記按鈕)</b></li>
+                                <li>新增(受託自然人-委託人為自然人) &nbsp;<a href="front/LP5.htm" target="_blank"></a></li>
+                                <li>新增(受託營利法人-委託人為自然人) &nbsp;<b>換頁step 1</b>&nbsp;<a href="front/LP6.htm" target="_blank"></a></li>
+                                <li>新增(受託營利法人-遊說代表資料填寫頁) &nbsp;<b>換頁step 2</b>&nbsp;<a href="front/LP7.htm" target="_blank"></a></li>
+                                <li>新增(受託營利法人-列表頁送出) &nbsp;<a href="front/LP8.htm" target="_blank"></a></li>
+                                <li>送件成功資訊頁(遊說登記) &nbsp;<a href="front/LP9.htm" target="_blank"></a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>遊說變更登記申請</td>
+                        <td>
+                            <ol>
+                                <li>查詢 &nbsp;<a href="front/LP10.htm" target="_blank"></a></li>
+                                <li>新增(受託自然人) <a href="front/LP4-change.htm" target="_blank"></a></li>
+                                <li>新增(受託營利法人，變更遊說者章程)4-1 &nbsp;<a href="front/LP6-change-1.htm" target="_blank"></a></li>
+                                <li>新增(受託營利法人)4-2 &nbsp;<b>同 LP8</b></li>
+                                <li>新增(受託營利法人)4-3 &nbsp;<a href="front/LP6-change-2.htm" target="_blank"></a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>遊說終止登記申請</td>
+                        <td>(受託自然人) &nbsp;<a href="front/LP11.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>案件自行撤銷</td>
+                        <td>
+                            <ol>
+                                <li>查詢結果列表 &nbsp;<a href="front/LP12.htm" target="_blank"></a></li>
+                                <li>撤銷理由填寫 &nbsp;<b>詳見LP3燈箱</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>補正(件)</td>
+                        <td>
+                            <ol>
+                                <li>列表 &nbsp;<a href="front/LP13.htm" target="_blank"></a></li>
+                                <li>處理(遊說登記申請-自行遊說- 法人或團體)3-1 &nbsp;<a href="front/LP14.htm" target="_blank"></a></li>
+                                <li>處理(遊說登記申請-自行遊說- 法人或團體)3-2 &nbsp;<a href="front/LP8-2.htm" target="_blank"></a></li>
+                                <li>處理(遊說登記申請-自行遊說- 法人或團體)3-3 &nbsp;<a href="front/LP7-2.htm" target="_blank"></a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>案件進度查詢</td>
+                        <td>
+                            <ol>
+                                <li>查詢 &nbsp;<a href="front/LP10-2.htm" target="_blank"></a></li>
+                                <li>駁回申請案件資料檢視(遊說登記申請-自行遊說- 自然人) &nbsp;<a href="front/LP15.htm" target="_blank"></a></li>
+                                <li>申請案件資料檢視(遊說登記申請-自行遊說- 法人或團體_遊說代表資料點選展開) &nbsp;<a href="front/LP16.htm" target="_blank"></a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>公開事項列表</td>
+                        <td>
+                            <ol>
+                                <li>(遊說登記事項) &nbsp;<a href="front/LP17.htm" target="_blank"></a></li>
+                                <li>(遊說案件紀錄表) &nbsp;<b>同 LP17</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>基本頁面</td>
+                        <td>404 &nbsp;<a href="front/404.htm" target="_blank"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table_wrapper">
+            <h3>後台</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>首頁</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <a href="javascript:;" class="scrollToTop" >回頁首</a> -->
+    <script src="front/js/jquery-3.6.0.min.js"></script>
+    <script>
+    $(function() {
+        $('tbody').find('a').each(function(index, el) {
+            var Link = $(this).attr('href');
+            $(this).text(Link);
+        });
+    })
+    </script>
+</body>
+
+</html>
