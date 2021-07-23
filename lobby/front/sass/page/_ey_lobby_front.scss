@@ -531,6 +531,12 @@ a.file_pdf{
             margin-left: 1.75em;
         }
     }
+
+    @include screen('mobile') {
+        h1{
+            padding: 0 .75em;
+        }
+    }
 }
 // 
 .mp-other-link{
@@ -540,7 +546,7 @@ a.file_pdf{
     background-size: auto 82%, auto auto;
 
     .container{
-        padding: 2em 1em;
+        padding: 2em 5em;
         background: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -671,6 +677,22 @@ a.file_pdf{
 
     @include screen('notebook') {
         background-size: auto auto, auto auto;
+
+        .container{
+            padding: 2em 4em;
+            .col{ margin-bottom: 1.25em; }
+        }
+    }
+    @include screen('mobile') {
+        background-position: right 20px, 50% 160px;
+        .container{
+            padding: 2em 1em;
+        }
+    }
+
+    @include screen('xs_mobile') {
+        background-size: auto 220px, auto auto;
+        background-position: right 0px, 50% 160px;
     }
 }
 
