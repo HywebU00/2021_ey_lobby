@@ -7,7 +7,7 @@ $m-gutter: 4px;
 // 
 .header{
     background: url(../images/mp-bg-land.jpg) 50% 94px no-repeat,
-                url(../images/key-visual.png) right 16% top 10px no-repeat;
+                url(../images/key-visual.svg) right 16% top 10px no-repeat;
     background-size: cover,  35% auto;
     min-height: 155px;
 
@@ -535,8 +535,10 @@ a.file_pdf{
 // 
 .mp-other-link{
     padding-top: 15em;
-    background: url(../images/key-visual.png) 50% top no-repeat, 
-                    url(../images/mp-bg-land.jpg) 50% 160px no-repeat;
+    background: url(../images/key-visual.svg) 50% top no-repeat, 
+                url(../images/mp-bg-land.jpg) 50% 160px no-repeat;
+    background-size: auto 82%, auto auto;
+
     .container{
         padding: 2em 1em;
         background: #fff;
@@ -666,6 +668,10 @@ a.file_pdf{
             }
         }
     }
+
+    @include screen('notebook') {
+        background-size: auto auto, auto auto;
+    }
 }
 
 // 內頁 -------------------------------------------
@@ -680,7 +686,7 @@ footer {
     @include clearfix;
     text-align: left;
     font-size: 0.813em;
-    padding: 1em 0;
+    padding: 2em 0 1em;
     .container {
         @include gutter;
         display: flex;

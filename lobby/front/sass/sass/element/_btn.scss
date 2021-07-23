@@ -178,6 +178,14 @@ $btn-radius:.2em;
     background: linear-gradient(90deg, rgba(253,100,79,1) 0%, rgba(239,128,98,1) 100%);
     font-size: 1.25em;
     padding: .75em 3em;
+
+    i{
+        margin-left: .5em;
+        &:before{
+            height: 1.35em;
+            width: 1.35em;
+        }
+    }
 }
 // 內頁登出
 .btn-logout{
