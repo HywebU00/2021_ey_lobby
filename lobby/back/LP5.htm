@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說線上登記申請審核暨管理系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="index.htm"><img src="images/logo.png" alt="遊說登記系統" /></a></h1>
+                <nav class="navigation">
+                    <p>
+                        <span>使用者：張三豐 (自然人憑證登入)<button class="btn btn-logout">登出</button></span>
+                        <span>登入時間：2018/09/26</span>
+                        <span>登出倒數：19分20秒</span>
+                    </p> 
+                </nav>
+                <!-- menu Start -->
+                <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">待辦事項</a></li>
+                        <li><a href="#">審核作業</a></li>
+                        <li><a href="#">案件查詢</a></li>
+                        <li><a href="#">接受遊說事項登錄</a></li>
+                        <li><a href="#">審核管理</a>
+                            <ul>
+                                <li><a href="#">審核意見詞庫管理</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">統計報表</a>
+                            <ul>
+                                <li><a href="#">遊說登記申請案件明細表</a></li>
+                                <li><a href="#">各機關受理遊說登記申請案件統計表</a></li>
+                                <li><a href="#">線上/紙本遊說申請案送件數統計表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">公告管理</a></li>
+                        <li><a href="#">遊說登記資料維護</a></li>
+                        <li><a href="#">紙本遊說登記申請建檔</a>
+                            <ul>
+                                <li><a href="#">遊說登記申請</a></li>
+                                <li><a href="#">遊說變更登記申請</a></li>
+                                <li><a href="#">遊說終止登記申請</a></li>
+                                <li><a href="#">遊說財務收支申報</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage has-btn_panel">
+            <!-- 內頁新增一個classname-->
+            <div class="container">
+                <!-- 主要內容區 -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-mix">
+                        <!-- h2節點 -->
+                        <h2 class="title">遊說登記申請 - 新增</h2>
+                        <!-- function功能區塊 -->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="#">回上一頁</a></li>
+                                <!-- <li class="icon_print"><a href="#">友善列印</a></li>
+                                <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- form Start -->
+                    <section>
+                        <div class="border-grp">
+                            <!-- step -->
+                            <div class="step">
+                                <a href="#" class="act"><span>step 1</span>申請人基本資料</a>
+                                <a href="#"><span>step 2</span>遊說代表資料</a>
+                            </div>
+                            <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                            <form action="">
+                                <!-- 1、申請人基本資料 -->
+                                <section class="form-card">
+                                    <h3>申請人基本資料</h3>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者類型</label>
+                                            <div class="form_content">
+                                                <p>受委託進行遊說者</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者身分</label>
+                                            <div class="form_content">
+                                                <p>營利法人</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>營利法人名稱</label>
+                                            <div class="form_content">
+                                                <p>奧美公共關係顧問股份有限公司</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>法人登記證明文件統一編號</label>
+                                            <div class="form_content">
+                                                <p>23224050</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>受託遊說備案日期及文號</label>
+                                            <div class="form_content">
+                                                <p>98 年 8 月 4 日台內民字第 0980142790 號</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>主事務所地址</label>
+                                            <div class="form_content form_inline address">
+                                                <select name="" id="">
+                                                    <option value="">台北市</option>
+                                                    <option value="">新北市</option>
+                                                    <option value="">桃園市</option>
+                                                    <option value="">新竹市</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <select name="" id="">
+                                                    <option value="">中正區</option>
+                                                    <option value="">大安區</option>
+                                                    <option value="">信義區</option>
+                                                    <option value="">北投區</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <input name="username" type="text" class="user_typing">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>主事務所聯絡電話</label>
+                                            <div class="form_content" id="">
+                                                <div class="check_grp">
+                                                    <label>
+                                                        <input type="checkbox" name="" value="" checked="">市內電話
+                                                        <div>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="" value="">行動電話
+                                                        <div>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>負責人姓名</label>
+                                            <div class="form_content">
+                                                <input name="text" type="text" value="" placeholder="一般狀態">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出生日期</div>
+                                            <div class="form_content">
+                                                <input name="" type="date" value="" class="calendar" placeholder="開始日期">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號</label>
+                                            <div class="form_content" id="">
+                                                <div class="radio_grp">
+                                                    <label>
+                                                        <input type="radio" name="sampleRadio1" value="" checked="">
+                                                        <div class="citizenship">
+                                                            <span>本國，國民身分證統一編號</span>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="sampleRadio1" value="">
+                                                        <div class="citizenship">
+                                                            <span>外國，國籍</span>
+                                                            <select id="selectSample" name="">
+                                                                <option value="">請選擇</option>
+                                                                <option value="">項目一</option>
+                                                                <option value="">項目二</option>
+                                                                <option value="">項目三</option>
+                                                            </select>
+                                                            <span>有效護照號碼或該國政府核發之身分證明文件字號</span>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡電話</label>
+                                            <div class="form_content" id="">
+                                                <div class="check_grp">
+                                                    <label>
+                                                        <input type="checkbox" name="" value="" checked="">市內電話
+                                                        <div>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="" value="">行動電話
+                                                        <div>
+                                                            <input name="text" type="text" value="" placeholder="input">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="email" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>電子郵件</label>
+                                            <div class="form_content">
+                                                <input name="email" type="email" id="email" value="" placeholder="type email">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>戶籍地址</label>
+                                            <div class="form_content form_inline address">
+                                                <select name="" id="">
+                                                    <option value="">台北市</option>
+                                                    <option value="">新北市</option>
+                                                    <option value="">桃園市</option>
+                                                    <option value="">新竹市</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <select name="" id="">
+                                                    <option value="">中正區</option>
+                                                    <option value="">大安區</option>
+                                                    <option value="">信義區</option>
+                                                    <option value="">北投區</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <input name="username" type="text" class="user_typing">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>通訊地址</label>
+                                            <div class="form_content form_inline address">
+                                                <select name="" id="">
+                                                    <option value="">台北市</option>
+                                                    <option value="">新北市</option>
+                                                    <option value="">桃園市</option>
+                                                    <option value="">新竹市</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <select name="" id="">
+                                                    <option value="">中正區</option>
+                                                    <option value="">大安區</option>
+                                                    <option value="">信義區</option>
+                                                    <option value="">北投區</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                                <input name="username" type="text" class="user_typing">
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox"><span>同戶籍地址</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說代表人數</label>
+                                            <div class="form_content">
+                                                <select id="selectSample" name="">
+                                                    <option value="">請選擇</option>
+                                                    <option value="">項目一</option>
+                                                    <option value="">項目二</option>
+                                                    <option value="">項目三</option>
+                                                </select>
+                                                <div class="notice_info">注意 : 最多為10人。</div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>委託人姓名或名稱</div>
+                                            <div class="form_content">
+                                                <input name="text" type="text" value="" placeholder="一般狀態">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 2、遊說登記資料 -->
+                                <section class="form-card">
+                                    <h3>遊說登記資料</h3>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請日期</label>
+                                            <div class="form_content">
+                                                <input name="" type="date" value="" class="calendar" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>被遊說者所屬機關</label>
+                                            <div class="form_content flex-equal-2">
+                                                <div class="form_grp">
+                                                    <select id="selectSample" name="" class="lost">
+                                                        <option value="">請選擇</option>
+                                                        <option value="">項目一</option>
+                                                        <option value="">項目二</option>
+                                                        <option value="">項目三</option>
+                                                    </select>
+                                                    <div class="notice_error">錯誤</div>
+                                                </div>
+                                                <div class="form_grp">
+                                                    <input name="username" type="text" placeholder="輸入關鍵字查詢">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>被遊說者姓名及職稱</label>
+                                            <div class="form_content flex-equal-2">
+                                                <div class="form_grp">
+                                                    <label for="username">受託遊說備案日期：</label>
+                                                    <input name="" type="date" value="" class="calendar" placeholder="">
+                                                </div>
+                                                <div class="form_grp">
+                                                    <label for="username">備案文號：</label>
+                                                    <input name="username" type="text" placeholder="" class="lost">
+                                                    <div class="notice_error">錯誤</div>
+                                                </div>
+                                                <div class="form_grp">
+                                                    <label for="username">被遊說者姓名：</label>
+                                                    <input name="username" type="text" placeholder="" class="lost">
+                                                    <div class="notice_error">錯誤</div>
+                                                </div>
+                                                <div class="form_grp">
+                                                    <label for="username">職稱：</label>
+                                                    <input name="username" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說目的及內容</div>
+                                            <div class="form_content">
+                                                <textarea name="" id="" cols="30" rows="5" placeholder=""></textarea>
+                                                <div class="notice_info">注意 : 最多可輸入字數為 150 字。</div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說期間</div>
+                                            <div class="form_content">
+                                                <div class="flex-equal-2 date_inline">
+                                                    <div class="form_grp">
+                                                        <input name="" type="date" value="" class="calendar" placeholder="開始日期">
+                                                    </div>
+                                                    <div class="form_grp">
+                                                        <input name="" type="date" value="" class="calendar" placeholder="結束日期">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>進行遊說預估支出金額</label>
+                                            <div class="form_content form_inline">
+                                                新臺幣<input name="text" type="text" value="" placeholder="">元整。
+                                                <div class="notice_info">注意 : 請輸入數字金額。</div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>約定委託報酬金額</label>
+                                            <div class="form_content form_inline">
+                                                新臺幣<input name="text" type="text" value="" placeholder="">元整。
+                                                <div class="notice_info">注意 : 請輸入數字金額。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 4、應檢附文件 -->
+                                <section class="form-card">
+                                    <h3>應檢附文件</h3>
+                                    <ol class="explan">
+                                        <li>檔案格式為JPG|JPEG|PNG|BMP|PDF，上傳的文件須清晰，身分證及護照上不能加上任何字句或圖樣，如：影印本/COPY等</li>
+                                        <li>檔案請小於2048K</li>
+                                        <li>應檢附文件請依原證件大小掃描後上傳</li>
+                                        <li>如證件雙面均載有資料，正、反面均需掃描後上傳</li>
+                                    </ol>
+                                    <div class="box">
+                                        <h4>受受委託遊說之營利法人</h4>
+                                        <div class="form_grid">
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>1. 章程影本。</label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title">2. 其他經機關指定檢附之額外證明文件。。</label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <h4>委託人為自然人</h4>
+                                        <div class="form_grid">
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>1. 本國人：國民身分證影本、戶口名簿影本或戶籍謄本；其為無戶籍之本國國民者，有效中華民國護照影本。外國人：有效護照基本資料頁影本或該國政府核發之身分證明文件影本。</label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>2. 遊說委託具結書。<a href="#">範本下載</a></label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>3. 釋明與欲遊說之政策、議案或法令之形成、制定、通過、變更或廢止關係之文件。</label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_grp">
+                                                <label for="selectSample" class="form_title">4. 其他經機關指定檢附之額外證明文件。</label>
+                                                <div class="form_content form_mix_operation">
+                                                    <div class="item">
+                                                        <div class="upload_grp">
+                                                            <input class="upload_file" type="text" readonly="">
+                                                            <div class="upload_btn">
+                                                                <span>上傳檔案</span>
+                                                                <input type="file" class="check_file">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_grp">
+                                                            <button type="button" class="btn btn-reset">清除檔案</button>
+                                                            <button type="button" class="btn btn-add"><i class="i_add2"></i>新增</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 5、審核-->
+                                <section class="form-card">
+                                    <h3>審核</h3>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>審核結果</label>
+                                            <div class="form_content" id="fake-legend">
+                                                <div class="radio_grp form_inline">
+                                                    <label><input type="radio" name="sampleRadio1" value="" checked="">審查核准</label>
+                                                    <label><input type="radio" name="sampleRadio1" value="">駁回不予受理</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>審核意見</label>
+                                            <div class="form_content">
+                                                <textarea name="" id="" cols="30" rows="5" placeholder="placeholder文字"></textarea>
+                                                <div class="notice_info">至多可輸入200個中英文字至多可輸入200個中英文字</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 按鈕 -->
+                                <div class="btn_panel btn_grp">
+                                    <button class="btn btn operate">資料暫存</button>
+                                    <button class="btn btn-submit">下一步</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <!-- form End -->
+                </div> 
+            </div>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright">內政部民政司 版權所有©  |  網站安全政策 隱私權保護政策</p>
+                    <p>地址 : 10055臺北市中正區徐州路5號     內政服務熱線 : 1996</p>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

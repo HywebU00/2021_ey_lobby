@@ -34,6 +34,14 @@
             color: #fff;
             padding: .25em .5em;
         }
+        b.note{
+            color: #646465;
+            background: #e3e3e3;
+            display: inline-block;
+            padding: 2px 12px;
+            margin: 1px 0;
+            border-radius: 12px;
+        }
         @media screen and (max-width:545px) {
             .demo_wrap h1 {
                 max-width: 100%;
@@ -90,11 +98,40 @@
         tbody tr td span{ color: deeppink; }
         tbody tr td b{
             background: none;
-            color: deeppink;
+            color: #b24101;
             padding: 0;
         }
         tbody tr td b.back{ background: #2da53b; }
+
+        h3{
+            font-size: 26px;
+            color: #fff;
+            padding: 1em 2em;
+            background: #114e7d;
+            margin-bottom: 0;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        h3 span{
+            display: inline-block;
+            font-size: 16px;
+            border: 1px solid #fff;
+            line-height: 26px;
+            padding: 0 1em;
+            margin-left: .75em;
+        }
+
         .btn_grp{ text-align: right; }
+
+        .note{
+            background: #b24101;
+            color: #fff;
+            padding: 1.5em;
+        }
+        .note h5{
+            margin: 0;
+            font-size: 1em;
+        }
 
         @media screen and (max-width:545px) {
            .btn_grp{ text-align: center; } 
@@ -109,7 +146,7 @@
         </div> -->
         <div class="table_wrapper">
             <!--  -->
-            <h3>前台</h3>
+            <h3>前台<span>lobby/ front/</span></h3>
             <table>
                 <thead>
                     <tr>
@@ -225,7 +262,7 @@
             </table>
         </div>
         <div class="table_wrapper">
-            <h3>後台</h3>
+            <h3>後台<span>lobby/ back/</span></h3>
             <table>
                 <thead>
                     <tr>
@@ -237,8 +274,152 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>首頁</td>
+                        <td>登入頁</td>
+                        <td><a href="lobby/back/login.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
                         <td></td>
+                        <td>審核作業</td>
+                        <td>
+                            <h4>待審案件</h4>
+                            <div class="note">
+                                <h5>本欄重點：</h5>
+                                <ol>
+                                    <li>區分左右欄：左欄為『頁籤』、右欄為『表單』</li>
+                                    <li>內容如有異動，提示框 classname：『change-reminder』</li>
+                                    <li>審核狀況有兩種：詳見右欄最下方『審核 狀況1、2』</li>
+                                    <li>右欄內容有重複欄位，請自行告知工程師該塞哪一頁，不重複製作</li>
+                                </ol>
+                            </div>
+                            <ol>
+                                <li>待審案件列表頁&nbsp;<a href="lobby/back/LP1.htm" target="_blank"></a></li>
+                            </ol>
+                            <h4>遊說登記</h4>
+                            <ol>
+                                <li>法人或團體自行遊說及受託營利法人-遊說代表資料&nbsp;<a href="lobby/back/LP19.htm" target="_blank"></a></li>
+                            </ol>
+                            <h4>變更登記</h4>
+                            <ol>
+                                <li>應檢附文件及資料變更示意&nbsp;<b>LP19</b></li>
+                                <li>法人或團體自行遊說及受託營利法人-遊說代表資料&nbsp;<b>LP19</b></li>
+                                <li>法人或團體自行遊說及受託營利法人-遊說代表資料&nbsp;<b>LP19</b></li>
+                            </ol>
+                            <h4>審查功能頁</h4>
+                            <ol>
+                                <li>審查功能頁-補正期限設定 (共同功能)&nbsp;<b>LP19</b></li>
+                                <li>審查功能頁-查詞庫功能 (共同功能)（跳窗）&nbsp;<b>詳見 LP2 我要建檔按鈕 > 項目2</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>紙本</td>
+                        <td>
+                            <h4>建檔</h4>
+                            <ol>
+                                <li>紙本遊說登記申請建檔&nbsp;<a href="lobby/back/LP2.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP3</b></li>
+                                <li>我要建檔（跳窗）&nbsp;<b>詳見 LP2 我要建檔按鈕 > 項目1</b></li>
+                                <li>建檔成功資訊頁(遊說登記-審查核准)&nbsp;<a href="lobby/back/LP3.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP9</b></li>
+                            </ol>
+                            <h4>新增</h4>
+                            <ol>
+                                <li>受託自然人-委託人為自然人&nbsp;<a href="lobby/back/LP4.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP5</b></li>
+                                <li>受託營利法人-委託人為自然人&nbsp;<a href="lobby/back/LP5.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP6</b></li>
+                                <li>受託營利法人-遊說代表資料填寫頁&nbsp;<a href="lobby/back/LP6.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP7</b></li>
+                                <li>受託營利法人-列表頁送出&nbsp;<a href="lobby/back/LP7.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP8</b></li>
+                            </ol>
+                            <h4>遊說變更登記申請</h4>
+                            <ol>
+                                <li>查詢&nbsp;<a href="lobby/back/LP8.htm" target="_blank"></a></li>
+                                <li>新增(受託自然人)&nbsp;<a href="lobby/back/LP9.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP4-change</b></li>
+                                <li>新增(受託營利法人，變更遊說者章程)4-1&nbsp;<a href="lobby/back/LP10-1.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP6-change-1</b></li>
+                                <li>新增(受託營利法人)4-2&nbsp;<b>同 LP7</b></li>
+                                <li>新增(受託營利法人)4-3&nbsp;<a href="lobby/back/LP10-2.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP6-change-2</b></li>
+                            </ol>
+                            <h4>遊說終止登記申請</h4>
+                            <ol>
+                                <li>遊說終止登記申請(受託自然人)&nbsp;<a href="lobby/back/LP11.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP11</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>案件查詢</td>
+                        <td>
+                            <ol>
+                                <li>查詢&nbsp;<a href="lobby/back/LP12.htm" target="_blank"></a></li>
+                                <li>查詢結果列表頁&nbsp;<b>同 LP13</b></li>
+                                <li>查詢結果詳細頁(案件撤銷)<b>左右對照</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>遊說登記資料維護</td>
+                        <td>
+                            <ol>
+                                <li>查詢結果列表&nbsp;<a href="lobby/back/LP13.htm" target="_blank"></a></li>
+                                <li>檢核警示訊息(已上架公告資料不可維護) <b>alert 工程師處理</b></li>
+                                <li>檢視 (遊說登記申請-自行遊說- 法人或團體)遊說代表&nbsp;<a href="lobby/back/LP14.htm" target="_blank"></a></li>
+                                <li>維護 (遊說登記申請-自行遊說- 法人或團體)4-1&nbsp;<a href="lobby/back/LP15.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP14</b></li>
+                                <li>維護 (遊說登記申請-自行遊說- 法人或團體)4-2&nbsp;<b>同 LP7</b></li>
+                                <li>維護 (遊說登記申請-自行遊說- 法人或團體)4-3&nbsp;<a href="lobby/back/LP16.htm" target="_blank"></a>&nbsp;<b class="note">雷同前台 LP7</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>統計報表（內政部帳號使用）</td>
+                        <td>
+                            <ol>
+                                <li>查詢(遊說登記申請案件明細表) &nbsp;<b>LP12 第2欄</b></li>
+                                <li>查詢(線上/紙本遊說申請案送件數統計表) &nbsp;<b>LP12 第3欄</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>公告管理</td>
+                        <td>
+                            <ol>
+                                <li>查詢 (FOR 遊說登記四項申請) &nbsp;<b>LP12 第4欄</b></li>
+                                <li>查詢結果列表&nbsp;<b>LP13 第2欄</b></li>
+                                <li>檢視(重新上架公告)&nbsp;<a href="lobby/back/LP17.htm" target="_blank"></a></li>
+                                <li>重新上架公告&nbsp;<b>LP17 第2欄</b></li>
+                                <li>重新上架公告後列表&nbsp;<b>LP13 第3欄</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>接受遊說事項登錄</td>
+                        <td>
+                            <ol>
+                                <li>查詢&nbsp;<b>LP12 第5欄</b></li>
+                                <li>查詢結果列表&nbsp;<b>LP13 第4欄</b></li>
+                                <li>檢核警示訊息(已上架公告資料不可維護)&nbsp;<b>alert 工程師處理</b></li>
+                                <li>查詢結果資料檢視(遊說者為法人或團體，或營利法人)&nbsp;<b>LP17 第3欄</b></li>
+                                <li>新增登錄資料查詢頁&nbsp;<b>LP8 第2欄</b></li>
+                                <li>新增登錄資料(遊說者為法人或團體，或營利法人)&nbsp;<a href="lobby/back/LP18.htm" target="_blank"></a></li>
+                                <li>查詢結果資料維護(遊說者為法人或團體，或營利法人)&nbsp;<b>LP18 第2欄</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>審核管理</td>
+                        <td>
+                            <ol>
+                                <li>審核意見詞庫管理&nbsp;<b>同下頁</b></li>
+                                <li>審核意見詞庫列表&nbsp;<b>LP12 第6欄</b></li>
+                                <li>編輯審核意見詞庫&nbsp;<b>LP12 第7欄</b></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>基本頁面</td>
+                        <td>404 &nbsp;<a href="lobby/back/404.htm" target="_blank"></a></td>
                     </tr>
                 </tbody>
             </table>

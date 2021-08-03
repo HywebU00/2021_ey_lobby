@@ -1,0 +1,89 @@
+$modal-width: 800px;
+$modal-maxheight: 600px;
+
+.modal {
+    position: fixed;
+    display: none;
+    width: $modal-width;
+    // height: 90%;
+    max-height: $modal-maxheight;
+    background: #FFF;
+    z-index: 99999999;
+    top: 5%;
+    left: 50%;
+    margin-left: -400px;
+    padding: 4em 1.5em 1em;
+    box-sizing: border-box;
+    border-radius:8px;
+    box-shadow:1px 1px 15px rgba(0, 0, 0, .5);
+    animation: scaleUp .5s ease-out;
+    overflow-y: scroll;
+    // font-size: 112.5%;
+    h2 {
+        // border-bottom: 1px solid $primaryColor;
+        color: #333;
+        box-shadow: rgba(50,50,93,.25) 0px 5px 12px -5px;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-top: 0;
+        padding: 1.5em 1em .5em;
+        background: #fff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: $modal-width;
+        top:1em;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .close {
+        position: fixed;
+        z-index: 101;
+        top: 5%;
+        right: calc(50% - 400px + 16px);
+        width: 42px !important;
+        height: 42px;
+        min-width: auto;
+        font-size: 0em;
+        border: none;
+        display: block;
+        border-radius: 50%;
+        padding: 0;
+        background: url(../images/basic/icon_close2.svg) no-repeat center center, #222;
+        background-size: 16px 16px;
+        &:hover, &:focus {
+            cursor: pointer;
+        }
+    }
+
+    @include screen('tablet') {
+        width: 90%;
+        height: 90%;
+        margin-left: -45%;
+        h2 { width: 90%;}
+
+        .close {
+            right: calc(50% - 45% + 16px);
+        }
+    }
+}
+@keyframes scaleUp {
+    0% {
+        transform: scale(1) translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+.modal_overlay {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: RGBA(0, 0, 0, .5);
+    z-index: 99999998;
+}

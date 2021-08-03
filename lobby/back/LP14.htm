@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說線上登記申請審核暨管理系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="index.htm"><img src="images/logo.png" alt="遊說登記系統" /></a></h1>
+                <nav class="navigation">
+                    <p>
+                        <span>使用者：張三豐 (自然人憑證登入)<button class="btn btn-logout">登出</button></span>
+                        <span>登入時間：2018/09/26</span>
+                        <span>登出倒數：19分20秒</span>
+                    </p> 
+                </nav>
+                <!-- menu Start -->
+                <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">待辦事項</a></li>
+                        <li><a href="#">審核作業</a></li>
+                        <li><a href="#">案件查詢</a></li>
+                        <li><a href="#">接受遊說事項登錄</a></li>
+                        <li><a href="#">審核管理</a>
+                            <ul>
+                                <li><a href="#">審核意見詞庫管理</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">統計報表</a>
+                            <ul>
+                                <li><a href="#">遊說登記申請案件明細表</a></li>
+                                <li><a href="#">各機關受理遊說登記申請案件統計表</a></li>
+                                <li><a href="#">線上/紙本遊說申請案送件數統計表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">公告管理</a></li>
+                        <li><a href="#">遊說登記資料維護</a></li>
+                        <li><a href="#">紙本遊說登記申請建檔</a>
+                            <ul>
+                                <li><a href="#">遊說登記申請</a></li>
+                                <li><a href="#">遊說變更登記申請</a></li>
+                                <li><a href="#">遊說終止登記申請</a></li>
+                                <li><a href="#">遊說財務收支申報</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <div class="container">
+                <!-- 主要內容區 -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-mix">
+                        <!-- h2節點 -->
+                        <h2 class="title">遊說登記申請 - 資料檢視</h2>
+                        <!-- function功能區塊 -->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="#">回上一頁</a></li>
+                                <!-- <li class="icon_print"><a href="#">友善列印</a></li>
+                                <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- form Start -->
+                    <section>
+                        <div class="border-grp">
+                            <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                            <form action="">
+                                <!-- 1、申請人基本資料 -->
+                                <section class="form-card">
+                                    <h3>申請人基本資料</h3>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者類型</label>
+                                            <div class="form_content">
+                                                <p>自行進行遊說者</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說者身分</label>
+                                            <div class="form_content">
+                                                <p>法人或團體</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請人(法人或團體)名稱</label>
+                                            <div class="form_content">
+                                                <p>全國教師工會總聯合會</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>登記證或許可設立或備案證明文件字號</label>
+                                            <div class="form_content">
+                                                <p>字第123456789號</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>主事務所地址</label>
+                                            <div class="form_content">
+                                                <p>台北市信義區忠孝東路5段100號</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>主事務所聯絡電話</label>
+                                            <div class="form_content">
+                                                <p>02-23456789</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>代表人(負責人姓名)</label>
+                                            <div class="form_content">
+                                                <p>高涌誠</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出生日期</div>
+                                            <div class="form_content">
+                                                <p>1965/07/01</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號</label>
+                                            <div class="form_content">
+                                                <p>本國，國民身分證統一編號 A123147598 </p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡電話</label>
+                                            <div class="form_content" id="">
+                                                <p>行動電話 0937896543</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="email" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>電子郵件</label>
+                                            <div class="form_content">
+                                                <p>tseng_kuo_ching@hotmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>戶籍地址</label>
+                                            <div class="form_content">
+                                                <p>台北市信義區忠孝東路5段100號</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>通訊地址</label>
+                                            <div class="form_content">
+                                                <p>台北市信義區忠孝東路5段100號</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說代表人數 </label>
+                                            <div class="form_content">
+                                                <p>4人</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 2、遊說登記資料 -->
+                                <section class="form-card">
+                                    <h3>遊說登記資料</h3>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請日期</label>
+                                            <div class="form_content">
+                                                <p>2021/05/05</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>被遊說者所屬機關</label>
+                                            <div class="form_content">
+                                                <p>行政院</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>被遊說者姓名及職稱</label>
+                                            <div class="form_content">
+                                                <p>姓名 : 張三<span class="job-title">院長</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說目的及內容</div>
+                                            <div class="form_content">
+                                                <p>請行政院支持96年送立法院審議之「兒童教育及照顧法」(草案)版本。</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>遊說期間</div>
+                                            <div class="form_content">
+                                                <p>2021/06/01 ~ 2021/06/15</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>進行遊說預估支出金額</label>
+                                            <div class="form_content form_inline">
+                                                <p>新臺幣 100000 元整</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>與欲遊說之政策、議案或法令之形成、制定、通過、變更或廢止之關係</label>
+                                            <div class="form_content form_inline">
+                                                <p>詳細說明如附件。</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title">資料維護備註說明</label>
+                                            <div class="form_content form_inline">
+                                                <p>公告後發現地址資料有誤，更正後再重新公告</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title">資料維護人員</label>
+                                            <div class="form_content form_inline">
+                                                <p>蔡麗美</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="phone" class="form_title">資料維護日期</label>
+                                            <div class="form_content form_inline">
+                                                <p>2021-06-10 09:41:50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- 7、遊說代表資料 -->
+                                <section class="form-card">
+                                    <h3>遊說代表資料</h3>
+                                    <div class="accordion name-list">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="">張三豐</a>
+                                                <div class="accordion-content">
+                                                    <div class="flex-form form_grid">
+                                                        <div class="form_grp">
+                                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出生日期 </label>
+                                                            <div class="form_content">
+                                                                <p>1971/10/12</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號</label>
+                                                            <div class="form_content">
+                                                                <p>本國，國民身分證統一編號 A123456789</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡電話</label>
+                                                            <div class="form_content">
+                                                                <p>(行動電話) 0937896543</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>通訊地址</label>
+                                                            <div class="form_content">
+                                                                <p>台北市信義區忠孝東路5段100號</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請人最近3年內（以遊說期間開始前1日往前推算3年）是否曾任遊說法第2條第3項第1款、第3款</label>
+                                                            <div class="form_content">
+                                                                <p>是，離職前 5 年內曾任公職<br>1. 服務機關 : 行政院 ， 職稱 : 專員，任職期間 : 1999/09/09 ~ 2020/03/03</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>具結聲明</label>
+                                                            <div class="form_content">
+                                                                <p>申請人(本人)聲明絕無遊說法第 10 條、第11條、第 12 條及其施行細則第 5 條之情事，特此具結。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">李四端</a>
+                                                <div class="accordion-content">
+                                                    <div class="flex-form form_grid">
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出生日期 </label>
+                                                            <div class="form_content">
+                                                                <p>1971/10/12</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號</label>
+                                                            <div class="form_content">
+                                                                <p>本國，國民身分證統一編號 A123456789</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡電話</label>
+                                                            <div class="form_content">
+                                                                <p>(行動電話) 0937896543</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>通訊地址</label>
+                                                            <div class="form_content">
+                                                                <p>台北市信義區忠孝東路5段100號</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請人最近3年內（以遊說期間開始前1日往前推算3年）是否曾任遊說法第2條第3項第1款、第3款</label>
+                                                            <div class="form_content">
+                                                                <p>是，離職前 5 年內曾任公職<br>1. 服務機關 : 行政院 ， 職稱 : 專員，任職期間 : 1999/09/09 ~ 2020/03/03</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>具結聲明</label>
+                                                            <div class="form_content">
+                                                                <p>申請人(本人)聲明絕無遊說法第 10 條、第11條、第 12 條及其施行細則第 5 條之情事，特此具結。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">王五郎</a>
+                                                <div class="accordion-content">
+                                                    <div class="flex-form form_grid">
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出生日期 </label>
+                                                            <div class="form_content">
+                                                                <p>1971/10/12</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號</label>
+                                                            <div class="form_content">
+                                                                <p>本國，國民身分證統一編號 A123456789</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡電話</label>
+                                                            <div class="form_content">
+                                                                <p>(行動電話) 0937896543</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>通訊地址</label>
+                                                            <div class="form_content">
+                                                                <p>台北市信義區忠孝東路5段100號</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請人最近3年內（以遊說期間開始前1日往前推算3年）是否曾任遊說法第2條第3項第1款、第3款</label>
+                                                            <div class="form_content">
+                                                                <p>是，離職前 5 年內曾任公職<br>1. 服務機關 : 行政院 ， 職稱 : 專員，任職期間 : 1999/09/09 ~ 2020/03/03</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_grp">
+                                                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>具結聲明</label>
+                                                            <div class="form_content">
+                                                                <p>申請人(本人)聲明絕無遊說法第 10 條、第11條、第 12 條及其施行細則第 5 條之情事，特此具結。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!-- 3、已上傳附件 -->
+                                <section class="form-card">
+                                    <h3>已上傳附件</h3>
+                                    <div class="form_grid">
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>登記證或許可設立或備案證明文件</label>
+                                            <div class="form_content form_mix_operation">
+                                                <ol class="">
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title">釋明與欲遊說之政策、議案或法令之形成、制定、通過、變更或廢止之關係之文件</label>
+                                            <div class="form_content form_mix_operation">
+                                                <ol class="">
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <p><a href="#">品富發102純天然有機質肥料 - 122.12毫升</a></p>
+                                                            <!-- <div class="btn_grp">
+                                                                <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                                            </div> -->
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </form>
+                        </div>
+                    </section>
+                    <!-- form End -->
+                </div> 
+            </div>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright">內政部民政司 版權所有©  |  網站安全政策 隱私權保護政策</p>
+                    <p>地址 : 10055臺北市中正區徐州路5號     內政服務熱線 : 1996</p>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>
