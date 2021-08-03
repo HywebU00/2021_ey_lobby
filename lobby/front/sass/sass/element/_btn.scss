@@ -17,6 +17,7 @@ $btn-radius:.2em;
     // text-shadow:1px 1px 1px RGBA(0,0,0,.3);
     // border-radius: $btn-radius;
     // @include gradient(lighten($btn-bg, 5), darken($btn-bg, 15), vertical);
+
     &:hover{
         background: darken($btn-bg, 10); // Old browsers
         border: 1px solid darken($btn-bg, 20);
@@ -173,18 +174,34 @@ $btn-radius:.2em;
 // 遊說自訂按鈕 --------------------------------------- start
 // 我要登記遊說
 .btn-lobby{
-    @include btn_setting(lighten($color-orange, 0), #FFF);
-    background: rgb(253,100,79);
-    background: linear-gradient(90deg, rgba(253,100,79,1) 0%, rgba(239,128,98,1) 100%);
+    // @include btn_setting(lighten($color-orange, 0), #FFF);
+    // background: rgb(253,100,79);
+    background-image: linear-gradient(90deg, rgba(253,100,79,1) 0%, rgba(239,128,98,1) 100%);
+    color: #fff;
     font-size: 1.25em;
-    padding: .75em 3em;
+    padding: 20px 60px;
+    text-shadow: 0 0 6px darken(rgb(253,100,79), 16);
+
+    transition: all .3s ease;
 
     i{
-        margin-left: .5em;
+        margin-left: 20px;
+        margin-right: 0;
+        box-shadow: 0 0 10px darken(rgb(253,100,79), 16);
+        border-radius: 50%;
         &:before{
             height: 1.35em;
             width: 1.35em;
         }
+    }
+
+    &:hover, &:focus{
+        text-shadow: none;
+        color: #fff;
+        // background: linear-gradient(180deg, rgba(47,179,131,1) 0%, rgba(0,106,81,1) 100%);
+        background-image: linear-gradient(to right, rgba(0,106,81,1) 0%, #1c6a51 100%);
+
+        i{ box-shadow: none;}
     }
 }
 // 內頁登出

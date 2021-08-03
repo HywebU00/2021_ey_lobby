@@ -7,8 +7,9 @@ $m-gutter: 4px;
 // 
 .header{
     background: url(../images/mp-bg-land.jpg) 50% 94px no-repeat,
-                url(../images/key-visual.svg) right 16% top 10px no-repeat;
-    background-size: cover,  35% auto;
+                url(../images/key-visual.svg) right 16% top 10px no-repeat,
+                url(../images/mp-bg-slash.jpg) right top no-repeat;
+    background-size: cover,  26% auto, inherit;
     min-height: 155px;
 
     .container{
@@ -528,7 +529,7 @@ a.file_pdf{
         align-items: center;
         h1{}
         button{
-            margin-left: 1.75em;
+            margin-left: 46px;
         }
     }
 
@@ -549,6 +550,18 @@ a.file_pdf{
         padding: 2em 5em;
         background: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 4px;
+            background: $lightColor;
+            bottom: 0;
+            left: 50%;
+            margin-left: -60px;
+        }
 
         @extend %flex_set;
         .col{
