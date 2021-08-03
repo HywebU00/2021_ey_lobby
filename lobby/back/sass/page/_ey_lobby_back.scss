@@ -166,6 +166,26 @@ $m-gutter: 4px;
     }
 }
 
+// 行動版選單sidebar
+.sidebar {
+    .navigation{
+        p{
+            color: #fff;
+            padding: 1em;
+            span{
+                display: block;
+                padding: .25em 0;
+            }
+        }
+    }
+    .m_area .menu{
+        background: #fff;
+        ul li:last-child>a{
+            border-bottom: transparent;
+        }
+    }
+}
+
 // 兩組東西、內容乎多乎少時、的對齊啦 -----------------
 .flex-mix{
     @extend %flex_set;
