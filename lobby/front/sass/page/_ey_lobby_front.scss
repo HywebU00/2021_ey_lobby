@@ -554,8 +554,9 @@ a.file_pdf{
     }
 
     @include screen('mobile') {
-        h1{
-            padding: 0 .75em;
+        .container{
+            h1{ padding: 0 .75em; }
+            button{ margin-left: 2px; }
         }
     }
 }
@@ -709,13 +710,16 @@ a.file_pdf{
     }
 
     @include screen('notebook') {
-        background-size: auto auto, auto auto;
-
         .container{
             padding: 2em 4em;
             .col{ margin-bottom: 1.25em; }
         }
     }
+
+    @include screen('tablet') {
+        background-size: auto auto, auto auto;
+    }
+
     @include screen('mobile') {
         background-position: right 20px, 50% 160px;
         .container{
