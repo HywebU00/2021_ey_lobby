@@ -186,6 +186,13 @@ $m-gutter: 4px;
     }
 }
 
+// 
+.innerpage>.container{
+    &.expand{
+        max-width: 100%;
+    }
+}
+
 // 兩組東西、內容乎多乎少時、的對齊啦 -----------------
 .flex-mix{
     @extend %flex_set;
