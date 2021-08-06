@@ -703,8 +703,7 @@ a.file_pdf{
                 text-align: center;
                 background-color: $primaryColor;
                 color: #FFF;
-                border-top-left-radius: .2em;
-                border-top-right-radius: .2em;
+                border-radius: 6px 6px 0 0;
 
                 position: relative;
                 overflow: inherit;
@@ -799,8 +798,9 @@ a.file_pdf{
             color: #222;
             background-color: #e4e4e4;
             // background: transparent;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            // border-bottom-left-radius: 0;
+            // border-bottom-right-radius: 0;
+            border-radius: 6px 6px 0 0;
             border: 0;
 
             &:hover, &:focus{
@@ -842,7 +842,7 @@ a.file_pdf{
     .tabContent{
         ol{
             li{ margin-bottom: 6px; }
-            // &.file-link{
+            // &.file-link{853
             //  li{ margin-bottom: 6px; }
             // }
         }
@@ -855,6 +855,10 @@ a.file_pdf{
             text-align: right;
             min-width: 220px;
             padding: .5rem;
+        }
+        table thead th{
+            text-align: center;
+            min-width: 100%;
         }
     }
 }
