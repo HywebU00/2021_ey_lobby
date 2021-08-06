@@ -758,6 +758,14 @@ a.file_pdf{
                 }
             }
         }
+
+        // 關閉 table scroll-x
+        .scroltable{
+            min-width: 100% !important;
+        }
+        .scroltable-wrapper {
+            overflow-x: hidden;
+        }
     }
 
     .file-content {
@@ -845,7 +853,7 @@ a.file_pdf{
         table th{
             white-space: break-spaces;
             text-align: right;
-            width: 180px;
+            min-width: 220px;
             padding: .5rem;
         }
     }
