@@ -851,7 +851,8 @@ a.file_pdf{
             h3{ margin-top: 0; }
         }
         table th{
-            white-space: break-spaces;
+            // white-space: break-spaces;
+            white-space: pre-wrap;
             text-align: right;
             min-width: 220px;
             padding: .5rem;
