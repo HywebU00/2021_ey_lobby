@@ -795,12 +795,12 @@ a.file_pdf{
 
     .style-1{
         .tabItem{
-            color: #222;
-            background-color: #e4e4e4;
+            color: #fff;
+            background-color: #806a8f;
             // background: transparent;
             // border-bottom-left-radius: 0;
             // border-bottom-right-radius: 0;
-            border-radius: 6px 6px 0 0;
+            border-radius: 8px 8px 0 0;
             border: 0;
 
             &:hover, &:focus{
@@ -827,6 +827,14 @@ a.file_pdf{
                     bottom: -2px;
                     background-color: $primaryColor;
                     transform: rotate(45deg);
+                }
+            }
+
+            @include screen('mobile') {
+                border-radius: 6px;
+                margin-top: 8px;
+                &.active {
+                    border-radius: 6px 6px 0 0;
                 }
             }
         }
@@ -859,7 +867,7 @@ a.file_pdf{
         }
         table thead th{
             text-align: center;
-            min-width: 100%;
+            min-width: 100px;
         }
     }
 }
