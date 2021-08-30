@@ -224,7 +224,27 @@ table{
     position: relative;
     border-radius: 6px;
 
-    h3{ color: $secondaryColor; }
+    h3{
+        color: $secondaryColor;
+    }
+    h4{
+        &.sub-title{
+            margin: 6px 0;
+            color: #0f735c;
+            padding-left: 1.5em;
+
+            display: inline-block;
+            padding: 12px 20px;
+            border: solid 1px #0f735c;
+            +p{ margin-top: 6px; }
+        }
+    }
+
+    p+img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: inherit;
+    }
 
     .btn_grp{ padding: .5em 0;}
 
@@ -339,6 +359,31 @@ a.file_pdf{
     background: url(../images/basic/icon_pdf.png) 50% 50% no-repeat;
     background-size: contain;
     margin: auto;
+}
+
+.question{
+    padding: .5em 0;
+    color: #0f735c;
+    font-size: 1.125em;
+    font-weight: bold;
+
+    &:before{
+        content: "Q";
+        font-size:2em;
+        color: #0f735c;
+    }
+}
+
+.answer{
+    padding: 1em 2em 0em 2em;
+    background: #efefef;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border-radius: 3px;
+    p{
+        margin-top: 0;
+        line-height: 180%;
+    }
 }
 
 // 

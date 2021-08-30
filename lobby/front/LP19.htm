@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說登記系統前台</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="index.htm"><img src="images/logo.png" alt="遊說登記系統" /></a></h1>
+                <!-- <nav class="navigation">
+                    <p>
+                        <span>使用者：張三豐 (自然人憑證登入)<button class="btn btn-logout">登出</button></span>
+                        <span>登入時間：2018/09/26</span>
+                        <span>登出倒數：19分20秒</span>
+                    </p> 
+                </nav> -->
+                <!-- menu Start -->
+                <!-- <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">優先處理事項</a></li>
+                        <li><a href="#">遊說登記申請</a></li>
+                        <li><a href="#">案件進度查詢</a>
+                            <ul>
+                                <li><a href="#">案件進度查詢</a></li>
+                                <li><a href="#">補正(件)列表</a></li>
+                                <li><a href="#">案件撤銷</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">遊說變更登記申請</a></li>
+                        <li><a href="#">遊說財務收支申報(年度)</a></li>
+                        <li><a href="#">遊說終止登記申請</a></li>
+                    </ul>
+                </nav> -->
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <div class="container">
+                <!-- 主要內容區 -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li><a href="#">優先處理事項</a></li>
+                            <li>新申請案件更多案件</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-mix">
+                        <!-- h2節點 -->
+                        <h2 class="title">常見問題</h2>
+                        <!-- function功能區塊 -->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="#">回上一頁</a></li>
+                                <!-- <li class="icon_print"><a href="#">友善列印</a></li>
+                                <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Start -->
+                    <!-- 1 -->
+                    <section class="border-grp" style="padding: 1.5em 2em;">
+                        <!-- 一般問題 -->
+                        <h3>一般問題</h3>
+                        <div class="question">1. 本平臺提供哪些遊說登記相關申請業務？</div>
+                        <div class="answer">
+                            <p>本平臺目前提供下列四項遊說登記相關申請之線上送件及審查服務 :</p>
+                            <ul>
+                                <li>遊說登記申請</li>
+                                <li>遊說變更登記申請</li>
+                                <li>遊說財務收支申報(年度)</li>
+                                <li>遊說終止登記申請</li>
+                            </ul>
+                        </div>
+                        <div class="question">2. 遊說登記相關業務除了線上申請方式之外，可以用書面提出申請嗎？</div>
+                        <div class="answer">
+                            <p>本平臺上線初期，採取線上及臨櫃雙軌並行受理遊說登記相關業務申請案件，後續再視案件受理情況屆時若推動全面線上申辦，將對外公告後再行實施。</p>
+                        </div>
+                        <div class="question">3. 如何登入本系統使用遊說登記相關業務申辦功能？</div>
+                        <div class="answer">
+                            <p>「遊說登記系統」提供一般民眾、法人、團體、受託遊說之執業自然人或營利法人於線上持憑持憑自然人憑證、工商憑證或組織或團體憑證(XCA)進行平台登入驗證作業。準備讀卡機連接個人電腦，插入憑證IC卡後輸入憑證之PIN Code驗證進行登入。登入後即可使用線上申辦功能。</p>
+                        </div>
+                        <div class="question">4. 線上檢附上傳系統之遊說登記相關業務申請之電子檔案為何種檔案格式類型？</div>
+                        <div class="answer">
+                            <p>本系統接受JPG及PDF電子檔案格式之遊說登記相關業務申請資料，一次可上傳多個檔案。</p>
+                        </div>
+                        <div class="question">5. 線上申請送件後，如何知悉、掌握案件受理審查進度狀態？</div>
+                        <div class="answer">
+                            <p>遊說登記相關業務申請線上送件後，系統隨即發送申請案件受理通知EMAIL於申請人所填寫之聯絡EMAIL信箱，後續若案件審查核定後(含退補件)，系統亦將發送案件核定結果通知EMAIL信件予申請人知悉。</p>
+                            <p>另，申請人登入系統後亦可於「優先處理事項」案件列表頁掌握目前已送件之案件審查狀態，無須再以電話聯繫詢問被遊說者所屬機關審理單位即可獲知。</p>
+                        </div>
+                        <div class="question">6. 遊說方式或遊說進行相關細節如何詢問解除疑惑？</div>
+                        <div class="answer">
+                            <p>遊說申請人(或團體)可逕洽被遊說者所屬機關遊說業務聯絡窗口。可點選本系統首頁”各機關受理單位聯絡窗口資料”圖示，系統顯示各機關遊說業務聯絡資訊。</p>
+                            <p>首次使用本系統有關操作方式及平臺所提供之各項服務說明，強烈建議申請人可先點選本系統首頁”常見問題”及”申請流程”圖示，詳讀介紹說明頁面進行了解，可避免不必要的錯誤操作情形發生。</p>
+                        </div>
+                        <!-- 系統操作問題 -->
+                        <h3>系統操作問題</h3>
+                        <div class="question">1. 首次使用本系統需準備哪些設備或工具？</div>
+                        <div class="answer">
+                            <p>除可Internet連線上網之個人電腦外，需準備自行遊說申請人之「自然人憑證IC卡」、法人或團體之「工商憑證IC卡」或「組織憑證IC卡」，以及IC卡讀卡機。</p>
+                        </div>
+                        <div class="question">2. 使用本系統有特定的個人電腦作業環境需求嗎？</div>
+                        <div class="answer">
+                            <p>個人電腦作業系統建議為中文版Microsoft Windows 7(含)以上版本；瀏覽器為 Internet Explorer 11(含)以上版本或FireFox (Version 49以上)；Internet網路連線須能正常上網，傳輸速度頻寬佳。</p>
+                        </div>
+                    </section>
+                    <!-- End --> 
+                </div> 
+            </div>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright">內政部民政司 版權所有©  |  網站安全政策 隱私權保護政策</p>
+                    <p>地址 : 10055臺北市中正區徐州路5號     內政服務熱線 : 1996</p>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>
