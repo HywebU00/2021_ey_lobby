@@ -64,6 +64,7 @@
 
 // ---------------- H ----------------
 .i_heart { @include hyui_icon('icon_heart'); }
+.i_hide { @include hyui_icon('icon_hide'); }
 .i_home { @include hyui_icon('icon_home'); }
 
 
@@ -110,6 +111,7 @@
 .i_setting { @include hyui_icon('icon_setting'); }
 .i_sort { @include hyui_icon('icon_sort'); }
 .i_star { @include hyui_icon('icon_star'); }
+.i_show { @include hyui_icon('icon_show'); }
 
 
 // ---------------- T ----------------
