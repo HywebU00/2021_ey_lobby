@@ -51,6 +51,10 @@ body {
         flex: none;
         flex-basis: 100%;
         max-width: 100%;
+
+        @media screen and (max-width: 1300px) {
+            padding-left: 60px;
+        }
     }
     .left_block {
         flex: none;
