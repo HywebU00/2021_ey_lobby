@@ -258,6 +258,22 @@ $m-gutter: 4px;
     }
 }
 
+// 資料異動警示
+.change-reminder{
+    display: block;
+    background: #9B403D;
+    padding: .125rem .5rem;
+    // margin: 0 .5em;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 90%;
+
+    &:before{
+        content: '原始資料：';
+        color: #fff;
+    }
+}
+
 // table 相關 -------------------------------------
 table{
 
@@ -406,6 +422,15 @@ table{
                     &:before{
                         counter-increment: aaa;
                         content: "遊說代表" counter(aaa) "：";
+                    }
+
+                    // 資料異動警示
+                    .change-reminder{
+                        display: inline-block;
+                        margin: 0 .5em;
+                        // &:before{
+                        //     content: '內容異動：';
+                        // }
                     }
                 }
             }
