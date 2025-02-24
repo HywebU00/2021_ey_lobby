@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>遊說登記系統前台</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="index.htm"><img src="images/logo.png" alt="遊說登記系統" /></a></h1>
+                <a href="sitemap.htm" class="siteMap">網站導覽</a>
+                <!-- <nav class="navigation">
+                    <p>
+                        <span>使用者：張三豐 (自然人憑證登入)<button class="btn btn-logout">登出</button></span>
+                        <span>登入時間：2018/09/26</span>
+                        <span>登出倒數：19分20秒</span>
+                    </p> 
+                </nav> -->
+                <!-- menu Start -->
+                <!-- <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">優先處理事項</a></li>
+                        <li><a href="#">遊說登記申請</a></li>
+                        <li><a href="#">案件進度查詢</a>
+                            <ul>
+                                <li><a href="#">案件進度查詢</a></li>
+                                <li><a href="#">補正(件)列表</a></li>
+                                <li><a href="#">案件撤銷</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">遊說變更登記申請</a></li>
+                        <li><a href="#">遊說財務收支申報(年度)</a></li>
+                        <li><a href="#">遊說終止登記申請</a></li>
+                    </ul>
+                </nav> -->
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <div class="container">
+                <!-- fixed side-bar -->
+                <div class="fixed_sidebar_group">
+                    <div class="sidebar_list">
+                        <a href="#">
+                            <div class="list_img"><img src="images/mp-other-link-icon-2-black.svg"></div>
+                            <div class="list_title">申請流程</div>
+                        </a>
+                    </div>
+                    <div class="sidebar_list">
+                        <a href="#">
+                            <div class="list_img"><img src="images/mp-other-link-icon-3-black.svg"></div>
+                            <div class="list_title">常見問題</div>
+                        </a>
+                    </div>
+                    <div class="sidebar_list">
+                        <a href="#">
+                            <div class="list_img"><img src="images/mp-other-link-icon-4-black.svg"></div>
+                            <div class="list_title">各機關受理單位聯絡窗口資料</div>
+                        </a>
+                    </div>
+                    <div class="sidebar_list">
+                        <a href="#">
+                            <div class="list_img"><img src="images/mp-other-link-icon-5-black.svg"></div>
+                            <div class="list_title">遊說法規</div>
+                        </a>
+                    </div>
+                    <div class="sidebar_list">
+                        <a href="#">
+                            <div class="list_img"><img src="images/mp-other-link-icon-6-black.svg"></div>
+                            <div class="list_title">影音教學</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 主要內容區 -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li>網站導覽</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-mix">
+                        <!-- h2節點 -->
+                        <h2 class="title">網站導覽</h2>
+                        <!-- function功能區塊 -->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="#">回上一頁</a></li>
+                                <!-- <li class="icon_print"><a href="#">友善列印</a></li>
+                                <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <section class="border-grp" style="padding: 1.5em 2em;">
+                        <section class="sitemap">
+                          <p>本網站依無障礙網頁設計原則建置，網站的主要內容分為三大區塊： 1. 上方功能區塊、2. 中央內容區塊、3.下方功能區塊。本網站的快速鍵﹝Accesskey﹞設定如下：</p>
+                          <ul class="accesskeyDefine">
+                            <li><kbd>Alt</kbd>+<kbd>U</kbd>上方功能區塊，包括回首頁、網站導覽、網站搜尋、字體選擇、版本選擇等。</li>
+                            <li><kbd>Alt</kbd>+<kbd>C</kbd>中央內容區塊，為本頁主要內容區。</li>
+                            <li><kbd>Alt</kbd>+<kbd>Z</kbd>下方功能區塊。</li>
+                            <li>如果您的瀏覽器是Firefox，快速鍵的使用方法是 <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>(快速鍵字母)</kbd>，例如 <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd>會跳至網頁中央區塊，以此類推。</li>
+                          </ul>
+                          <p>
+                            ※當本網站項目頁籤無法以滑鼠點選時，您可利用以下鍵盤操作方式瀏覽資料 <br />
+                            <kbd>←</kbd> <kbd>→</kbd> or <kbd>↑</kbd><kbd>↓</kbd>：按左右鍵或上下鍵移動標籤順序。 <br />
+                            <kbd>Home</kbd> or <kbd>End</kbd><kbd>→</kbd>：可直接跳至標籤第一項或者最後一項。 <br />
+                            <kbd>Tab</kbd>：停留於該標籤後,可利用<kbd>Tab</kbd>鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使用<kbd>←</kbd> <kbd>→</kbd> or <kbd>↑</kbd><kbd>↓</kbd>鍵移動項目順序。 <br />
+                            <kbd><kbd>Tab + Shift</kbd></kbd
+                            >：按Tab + Shift可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用<kbd>←</kbd> <kbd>→</kbd> or <kbd>↑</kbd><kbd>↓</kbd>鍵移動標籤順序。
+                          </p>
+                        </section>
+                        <div class="cascading">
+                          <ul>
+                              <li><a href="#">優先處理事項</a></li>
+                              <li><a href="#">遊說登記申請</a></li>
+                              <li><a href="#">案件進度查詢</a>
+                                  <ul>
+                                      <li><a href="#">案件進度查詢</a></li>
+                                      <li><a href="#">補正(件)列表</a></li>
+                                      <li><a href="#">案件撤銷</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">遊說變更登記申請</a></li>
+                              <li><a href="#">遊說財務收支申報(年度)</a></li>
+                              <li><a href="#">遊說終止登記申請</a></li>
+                          </ul>
+                        </div>
+                    </section>
+                </div> 
+            </div>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright">內政部民政司 版權所有©&nbsp;&nbsp;|&nbsp;<a href="#">網站安全政策</a><a href="#">隱私權保護政策</a><a href="#">政府網站資料開放宣告</a><a href="#">保有及管理個人資料</a></p>
+                    <p>地址 : 10055臺北市中正區徐州路5號     內政服務熱線 : 1996</p>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

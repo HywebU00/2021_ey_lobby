@@ -15,6 +15,23 @@ $m-gutter: 4px;
     .container{
         // background: url(../images/key-visual.png) right 20px no-repeat;
         // background-size: 45% auto;
+
+        position: relative;
+        a.siteMap{
+            // 網站導覽
+            position: absolute;
+            right: 0;
+            top: 0;
+            line-height: 42px;
+            color: #fff;
+            background: rgba(0,0,0,.75);
+            padding: 0 20px;
+            border-radius: 0 0 4px 4px;
+            transition: .3s;
+            &:hover, &:focus-visible{
+                background: #0b3250;
+            }
+        }
     }
 
     h1{ padding: 6px .5em; }
@@ -44,7 +61,8 @@ $m-gutter: 4px;
         min-height: auto;
         .container{}
 
-        .navigation { display: none;}
+        .navigation,
+        a.siteMap { display: none;}
     }
 }
 
@@ -708,6 +726,21 @@ a.file_pdf{
         h1{}
         button{
             margin-left: 46px;
+        }
+        a.siteMap{
+            // 網站導覽
+            position: absolute;
+            right: 0;
+            top: 0;
+            line-height: 42px;
+            color: #222;
+            padding: 0 12px;
+            border-radius: 0 0 4px 4px;
+            transition: .3s;
+            &:hover, &:focus-visible{
+                background: #333;
+                color: #fff;
+            }
         }
     }
 

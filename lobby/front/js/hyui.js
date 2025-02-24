@@ -50,6 +50,7 @@ $(function() {
         _sidebarClose = $('.sidebarClose'),
         _sidebarCtrl = $('.sidebarCtrl'),
         _overlay = $('.menu_overlay');
+        _sitemap = $('a.siteMap'),
     _mArea = $('.m_area');
     _sidebarCtrl.append('<span></span><span></span><span></span>');
     var search_mode = false;
@@ -113,6 +114,7 @@ $(function() {
     });
     // 先複製過去
     _nav.clone().prependTo(_mArea);
+    _sitemap.clone().prependTo(_mArea);
     _menu.clone().prependTo(_mArea);
     _megamenu.clone().prependTo(_mArea);
     // _search.clone().prependTo(_body).addClass('m_search');
